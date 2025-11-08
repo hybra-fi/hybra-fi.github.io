@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "hybra",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/hybra-new-logo.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://hybra-fi.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://hybra-fi.github.io/sitemap.xml",
+    "mbrsiteDomain": "oemrmokuky",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Hybra | Hybra Finance | Home™",
+        "meta_descr": "Hybra Finance is a decentralized cryptocurrency exchange established in -. Currently, there are 3 coins and 4 trading pairs available on the exchange.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/hybra.png\" alt=\"Hybra\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "v1VWxyZBHB",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Hybra Finance: A New Frontier in Decentralized Finance</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The emergence of decentralized finance (DeFi) has revolutionized how individuals interact with financial services, enabling users to lend, borrow, trade, and invest without intermediaries. Among the innovative projects in this space is <a href=\"https://hybra-fi.github.io/\" class=\"text-primary\"><b>Hybra Finance</b></a>, a platform designed to simplify and enhance the DeFi experience. With a focus on accessibility, security, and community engagement, Hybra Finance aims to empower users to take control of their financial futures. This article delves into Hybra Finance’s vision, key features, benefits, challenges, and its potential impact on the DeFi landscape.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Hybra Finance?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Overview</b><br><a href=\"https://www.hybra.finance/\" class=\"text-primary\"><b>Hybra Finance</b></a> is a decentralized finance platform that offers a suite of financial services, including yield farming, lending, borrowing, and token trading. Built on the blockchain, Hybra Finance enables users to interact with financial products in a trustless and efficient manner, eliminating the need for traditional financial intermediaries. The platform is designed to provide users with a seamless experience while maximizing returns on their investments.<br><br><b>Vision and Mission</b><br>The vision of Hybra Finance is to create an inclusive financial ecosystem that empowers users to manage their assets efficiently. Its mission is to democratize access to financial services by providing tools that are easy to use, secure, and designed for everyone, from novice investors to seasoned traders.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features of Hybra Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. User-Friendly Interface</b><br>Hybra Finance boasts a clean and intuitive user interface that simplifies navigation. Users can easily access various functionalities, from lending and borrowing to yield farming and token swaps. This design is particularly beneficial for newcomers to the DeFi space.<br><br><b>2. Yield Farming</b><br>One of the standout features of Hybra Finance is its yield farming capabilities. Users can stake their assets in liquidity pools to earn rewards in the form of interest and additional tokens. This feature incentivizes users to provide liquidity to the platform while maximizing their returns.<br><br><b>3. Decentralized Lending and Borrowing</b><br>Hybra Finance offers a decentralized lending and borrowing platform that allows users to lend their assets and earn interest or borrow against their existing assets. This system operates without the need for credit checks or intermediaries, providing users with greater financial flexibility.<br><br><b>4. Token Swapping</b><br>The platform includes a built-in token swap feature, allowing users to exchange one cryptocurrency for another directly within the wallet. This functionality streamlines the trading process and helps users take advantage of market opportunities quickly.<br><br><b>5. Multi-Chain Support</b><br>Hybra Finance is designed to support multiple blockchain networks, enhancing its interoperability. This multi-chain support allows users to interact with various assets and DeFi protocols, broadening the scope of financial opportunities available.<br><br><b>6. Security Measures</b><br>Security is a top priority for Hybra Finance. The platform employs industry-standard security practices, including smart contract audits and multi-signature wallets, to protect user funds and ensure a secure trading environment.<br><br><b>7. Community Governance</b><br>Hybra Finance utilizes a decentralized governance model, allowing users to participate in decision-making processes. Token holders can propose and vote on changes to the protocol, ensuring that the community has a voice in the platform's development.<br><br><b>8. Educational Resources</b><br>To support user engagement and understanding, Hybra Finance provides educational resources, including tutorials and market analyses. These resources help users navigate the DeFi landscape and make informed decisions.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Benefits of Using Hybra Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Empowerment Through Decentralization</b><br>Hybra Finance empowers users by providing a decentralized platform where they can manage their assets without intermediaries. This model fosters financial independence and control over personal investments.<br><br><b>2. Attractive Yield Opportunities</b><br>The yield farming feature allows users to earn attractive returns on their investments. By participating in liquidity pools, users can maximize their earning potential while contributing to the platform's overall liquidity.<br><br><b>3. Cost-Effective Financial Services</b><br>Hybra Finance aims to keep transaction fees low, making it an affordable option for users engaging in DeFi activities. This cost-effectiveness is particularly beneficial for frequent traders and investors.<br><br><b>4. Security and Trust</b><br>With robust security measures in place, Hybra Finance provides users with peace of mind knowing their funds are protected. The platform’s commitment to security enhances trust among users and encourages broader adoption.<br><br><b>5. Community Engagement</b><br>The decentralized governance model fosters community engagement and participation. Users have a say in the platform's direction and can actively contribute to its development, creating a sense of ownership.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How to Get Started with Hybra Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Step 1: Create an Account</b><br>To use Hybra Finance, users need to create an account by visiting the official website. The registration process is straightforward and requires basic information.<br><br><b>Step 2: Connect a Wallet</b><br>Once registered, users should connect a compatible cryptocurrency wallet, such as MetaMask or a hardware wallet. This connection allows users to manage their assets securely.<br><br><b>Step 3: Fund Your Wallet</b><br>Users can fund their wallets by purchasing cryptocurrencies from exchanges and transferring them to their Hybra Finance wallet. Supported assets may include popular cryptocurrencies like ETH, BTC, and stablecoins.<br><br><b>Step 4: Explore Features</b><br>With funds in their wallets, users can explore the various features of Hybra Finance, such as yield farming, lending, borrowing, and token swapping. The user-friendly interface makes navigation easy.<br><br><b>Step 5: Engage with the Community</b><br>Users are encouraged to engage with the Hybra Finance community through social media channels and forums. This engagement fosters collaboration and the sharing of knowledge among users.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Market Volatility</b><br>The cryptocurrency market is known for its volatility, which can affect the value of assets held on Hybra Finance. Users must exercise caution and implement risk management strategies to mitigate potential losses.<br><br><b>2. Learning Curve</b><br>While Hybra Finance aims to provide a user-friendly experience, newcomers to the DeFi space may still face a learning curve. Understanding liquidity pools, yield farming, and other functionalities requires some knowledge of decentralized finance.<br><br><b>3. Security Concerns</b><br>Although Hybra Finance implements robust security measures, users must remain vigilant and practice good security hygiene. This includes safeguarding private keys and being cautious of phishing attempts.<br><br><b>4. Regulatory Environment</b><br>As the DeFi landscape continues to grow, regulatory scrutiny may increase. Hybra Finance must navigate the evolving regulatory environment to ensure compliance and maintain user trust.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of Hybra Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Expanding Product Offerings</b><br>To maintain its competitive edge, Hybra Finance may introduce new financial products and features that enhance user experience. Potential additions could include advanced trading tools, analytics, and integrations with other DeFi protocols.<br><br><b>2. Increased User Education</b><br>Hybra Finance could expand its educational resources to better equip users with the knowledge they need to navigate the DeFi landscape. This could include tutorials, webinars, and community events.<br><br><b>3. Enhanced Security Protocols</b><br>As security threats evolve, Hybra Finance must remain vigilant in enhancing its security protocols. Implementing advanced encryption techniques and conducting regular audits can help protect user assets.<br><br><b>4. Institutional Partnerships</b><br>Hybra Finance may focus on establishing partnerships with institutional investors to offer tailored solutions that meet their specific needs. This could include enhanced support, security measures, and analytics.<br><br><b>5. Global Expansion</b><br>As DeFi continues to gain traction globally, Hybra Finance may explore opportunities for expansion into new markets. This expansion could involve local partnerships and adaptations to meet regional regulatory requirements.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Hybra Finance represents a significant advancement in the decentralized finance ecosystem, offering users a powerful platform to access a wide range of financial services. With its focus on user experience, security, and community engagement, Hybra Finance is well-positioned to drive the adoption of DeFi.<br><br>As the platform continues to evolve and adapt to the needs of its users, it holds the potential to reshape how individuals and institutions interact with financial services. Whether you are a retail investor, liquidity provider, or institutional participant, Hybra Finance provides the tools and resources needed to navigate the complexities of decentralized finance.<br><br>In a world where financial sovereignty and innovation are increasingly valued, Hybra Finance exemplifies the potential of blockchain technology to empower users and create a more inclusive financial ecosystem. Embrace the opportunities that Hybra Finance offers, and embark on your journey into the future of decentralized finance.<br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "v1VWxT1xHO",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
